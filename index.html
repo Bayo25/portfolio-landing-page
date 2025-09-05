@@ -1,0 +1,83 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Landing Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+        <link rel="icon" href="favicon.png" type="image/icon">
+
+        <meta name="description" content="A simple portfolio landing page">
+        <meta name="Keywords" content="portfolio, landing page, projects, web development">
+        <meta name="author" content="Adebayo">
+    </head>
+    <body>
+        <main aria-label="Main Content">
+            <header>
+                <h1>Portfolio Landing Page</h1>
+                <p>Welcome to my portfolio! Explore my projects and skills.</p>
+                <nav>
+                    <ul>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section aria-label="Hero Section">
+                <h2>My Name is Adebayo</h2>
+                <p>Together we can build awesome projects</p>
+            </section>
+            <section aria-label="About Section">
+                <h2>About me</h2>
+                <p>I am a developer who enjoys making ideas come alive, I build web applications</p>
+                <!-- <img src="myimage.jpg" alt="my image"> -->
+                 <picture>
+                    <source media="(min-width: 750px)" srcset="assests/images/myimage.jpg" type="image/jpg">
+                    <img src="assests/images/myimage.jpg" alt="my image">
+                 </picture>
+            </section>
+            <section aria-label="Project Section">
+                <h2>Projects</h2>
+                <div>
+                    <h3>Project 1</h3>
+                    <p>This is the description for project 1</p>
+                    <img src="assests/images/project1.jpg" alt="project 1 image">
+                </div>
+                <div>
+                    <h3>Project 2</h3>
+                    <p>This is the description for project 2</p>
+                    <img src="assests/images/project2.jpg" alt="project 2 image">
+                </div>
+            </section>
+            <section aria-label="Contact Section">
+                <fieldset>
+                    <legend>Contact Me</legend>
+                    <form action="/submit_form" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        
+                        <button type="submit">Send</button>
+                    </form>
+                </fieldset>
+
+                <iframe src="https://www.google.com/maps/embed" frameborder="0"></iframe>
+            </section>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
